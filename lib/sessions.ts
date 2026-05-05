@@ -1,0 +1,43 @@
+import type { SessionData } from '@/components/sections/SessionCard'
+
+export const sessions: SessionData[] = [
+  {
+    id: 'empathie',
+    index: 0,
+    icon: '🧠',
+    title: 'La Logique au service de l\'Empathie',
+    subtitle: 'Support & Diagnostic → Découverte Client',
+    quote: 'Un problème technique, c\'est une histoire humaine à résoudre.',
+    body: 'Quand un client entre en magasin, il ne vient pas acheter un produit — il vient résoudre quelque chose. Ma formation en support utilisateur (BTS SIO) m\'a appris à diagnostiquer avant d\'intervenir. En retail Apple, j\'applique ce même protocole : écouter, identifier le vrai besoin, et guider vers la solution qui change vraiment la vie de cette personne.',
+    accent: '#7B61FF',
+    glow: 'rgba(123, 97, 255, 0.35)',
+    glowClass: 'glow-violet',
+    skills: ['Tickets d\'incident', 'ITIL mindset', 'Découverte client', 'Empathie structurée'],
+  },
+  {
+    id: 'performance',
+    index: 1,
+    icon: '⚡',
+    title: 'Traduire la Performance',
+    subtitle: 'Architecture Matérielle → Storytelling Produit',
+    quote: 'La meilleure technologie est celle qu\'on comprend sans effort.',
+    body: 'Apple Silicon. Le Neural Engine. L\'écosystème Continuity. Ces architectures sont fascinantes — mais elles ne parlent qu\'à travers des histoires. Grâce à mes cours d\'architecture matérielle et OS, je peux expliquer pourquoi l\'iPhone et le Mac forment un seul cerveau, sans un seul mot de jargon. La technologie disparaît. La magie reste.',
+    accent: '#0A84FF',
+    glow: 'rgba(10, 132, 255, 0.35)',
+    glowClass: 'glow-blue',
+    skills: ['Architecture matérielle', 'Apple Silicon', 'Continuity', 'Pédagogie'],
+  },
+  {
+    id: 'confidentialite',
+    index: 2,
+    icon: '🔒',
+    title: 'Confidentialité & Confiance',
+    subtitle: 'Réseaux/Cybersécurité → Privacy Narrative',
+    quote: 'La vie privée n\'est pas une fonctionnalité. C\'est un droit fondamental.',
+    body: 'Apple défend la vie privée comme un droit fondamental — et mes bases en réseaux & cybersécurité (BTS SIO) me permettent d\'en être l\'ambassadeur en magasin. Expliquer le chiffrement de bout en bout, App Tracking Transparency, ou Face ID sans code source ni terminal. Juste la vraie valeur : vos données n\'appartiennent qu\'à vous.',
+    accent: '#30D158',
+    glow: 'rgba(48, 209, 88, 0.35)',
+    glowClass: 'glow-green',
+    skills: ['Cybersécurité', 'RGPD', 'Privacy by Design', 'Confiance client'],
+  },
+]
