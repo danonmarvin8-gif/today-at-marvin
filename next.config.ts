@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/today-at-marvin',
+  trailingSlash: true,
 };
 
 export default nextConfig;
