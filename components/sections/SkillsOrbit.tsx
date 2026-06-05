@@ -4,12 +4,12 @@ import { motion } from 'framer-motion'
 import { useAccessibility } from '@/components/core/AccessibilityProvider'
 
 const skills = [
-  { label: 'Support Utilisateur', angle: 0, color: '#7B61FF' },
-  { label: 'Apple Ecosystem', angle: 60, color: '#0A84FF' },
-  { label: 'Cybersécurité', angle: 120, color: '#30D158' },
-  { label: 'Bac Pro Commerce', angle: 180, color: '#FF9F0A' },
-  { label: 'Empathie Client', angle: 240, color: '#FF375F' },
-  { label: 'BTS SIO', angle: 300, color: '#64D2FF' },
+  { label: 'Support Utilisateur', angle: 0, color: '#9B87FF' },
+  { label: 'Apple Ecosystem', angle: 60, color: '#3D9EFF' },
+  { label: 'Cybersécurité', angle: 120, color: '#34D058' },
+  { label: 'Bac Pro Commerce', angle: 180, color: '#FFB340' },
+  { label: 'Empathie Client', angle: 240, color: '#FF6B85' },
+  { label: 'BTS SIO', angle: 300, color: '#70D8FF' },
 ]
 
 export function SkillsOrbit() {
@@ -47,6 +47,7 @@ export function SkillsOrbit() {
           style={{
             background: 'radial-gradient(circle, #7B61FF 0%, #0A84FF 100%)',
             boxShadow: '0 0 40px rgba(123,97,255,0.5)',
+            willChange: 'transform',
           }}
           animate={reducedMotion ? {} : { rotate: 360 }}
           transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}

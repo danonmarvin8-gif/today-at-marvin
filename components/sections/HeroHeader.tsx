@@ -26,7 +26,7 @@ function FloatingOrb({
     <motion.div
       aria-hidden="true"
       className="absolute rounded-full pointer-events-none"
-      style={{ width: size, height: size, left: x, top: y }}
+      style={{ width: size, height: size, willChange: 'transform, opacity', transform: `translate(${x}, ${y})` }}
       animate={
         reducedMotion
           ? {}
@@ -84,7 +84,7 @@ function AntiGravityText({ text, delay = 0 }: { text: string; delay?: number }) 
                   transition: { type: 'spring', stiffness: 400, damping: 12 },
                 }
           }
-          style={{ cursor: 'default' }}
+          style={{ cursor: 'default', willChange: 'transform, opacity' }}
         >
           {char === ' ' ? '\u00A0' : char}
         </motion.span>
@@ -246,11 +246,11 @@ export function HeroHeader() {
           >
             <p className="text-xl sm:text-2xl font-light text-white/80 leading-relaxed">
               Je transforme la{' '}
-              <span className="font-semibold gradient-text-violet">complexité technique</span>
-              {' '}en {' '}
-              <span className="font-semibold" style={{ color: '#0A84FF' }}>conversations simples</span>.
+              <span className="font-semibold gradient-text-violet" style={{ color: '#c4b5fd' }}>complexité technique</span>
+              {' '}en{' '}
+              <span className="font-semibold" style={{ color: '#60a5fa' }}>conversations simples</span>.
             </p>
-            <p className="mt-3 text-base text-white/45 font-light">
+            <p className="mt-3 text-base text-white/65 font-light">
               BTS SIO · Bac Pro Commerce · Futur Spécialiste Apple
             </p>
           </motion.div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* Note: Google Fonts est géré par next/font dans layout.tsx — import redondant supprimé pour optimiser le LCP */
 @import "tailwindcss";
 
 /* ─── Tailwind v4 Theme Extensions ──────────────────────────── */
@@ -198,3 +198,24 @@ body {
 .animate-float { animation: float 6s ease-in-out infinite; }
 .animate-float-slow { animation: float 9s ease-in-out infinite; }
 .animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+
+/* ─── GPU Hints for Framer Motion entrance animations ─────────── */
+.animate-float, .animate-float-slow {
+  will-change: transform, opacity;
+}
+
+/* ─── WCAG AA Contrast Enhancement (Mobile) ───────────────── */
+@media (max-width: 640px) {
+  .text-white\/55 { color: rgba(255, 255, 255, 0.72) !important; }
+  .text-white\/50 { color: rgba(255, 255, 255, 0.68) !important; }
+  .text-white\/40 { color: rgba(255, 255, 255, 0.58) !important; }
+}
+
+/* ─── Mobile Safe Text Wrapping ───────────────────────────── */
+@media (max-width: 640px) {
+  .glass p, .glass blockquote, .glass h3 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+}

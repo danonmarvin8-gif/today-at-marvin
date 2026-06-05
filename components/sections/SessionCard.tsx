@@ -86,6 +86,7 @@ export function SessionCard({ session, isActive = false }: SessionCardProps) {
         rotateX: reducedMotion ? 0 : springX,
         rotateY: reducedMotion ? 0 : springY,
         transformStyle: 'preserve-3d',
+        willChange: 'transform, opacity',
       }}
       className={`glass ${session.glowClass} rounded-card p-7 sm:p-9 relative overflow-hidden group cursor-default h-full`}
     >
