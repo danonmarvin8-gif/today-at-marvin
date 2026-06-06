@@ -150,6 +150,23 @@ body {
   flex-shrink: 0;
 }
 
+/* Badge variant — inside HeroBadge, matches text-xs (12px) */
+.apple-icon-badge {
+  display: inline-block;
+  height: 14px;
+  width: auto;
+  fill: currentColor;
+  color: rgba(255, 255, 255, 0.7);
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 4px rgba(123, 97, 255, 0.5));
+  animation: badge-glow 2.5s ease-in-out infinite;
+}
+
+@keyframes badge-glow {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(123, 97, 255, 0.5)); color: rgba(255, 255, 255, 0.7); }
+  50%      { filter: drop-shadow(0 0 8px rgba(123, 97, 255, 0.8)); color: rgba(255, 255, 255, 0.9); }
+}
+
 /* ─── Scrollbar ───────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--color-void); }

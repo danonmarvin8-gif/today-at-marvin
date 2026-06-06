@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useAccessibility } from '@/components/core/AccessibilityProvider'
+import { AppleIcon } from '@/components/core/AppleIcon'
 
 export function ContactFooter() {
   const { reducedMotion } = useAccessibility()
@@ -88,16 +89,7 @@ export function ContactFooter() {
         transition={{ delay: 0.5 }}
       >
         <p className="inline-flex items-center gap-1.5 flex-wrap justify-center">
-            {/* Apple logo — inline SVG, aucun Unicode, compatible Windows/Android */}
-            <svg
-              className="apple-icon"
-              aria-hidden="true"
-              focusable="false"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 814 1000"
-            >
-              <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-57.8-155.5-127.4C46 376.7 0 246.7 0 121.3c0-61.6 12.1-121.2 38.4-171.6C78.8-123.6 166 0 222.7 0c61.1 0 99.5 39.4 154.5 39.4 53.5 0 86.5-39.4 165.4-39.4 54.5 0 149.1 54.5 190.5 141.8-.6.3-108.8 54.5-108.8 198.7zm-174.7-209.8c28.9-35.1 49.7-84.2 49.7-133.4 0-6.5-.6-13-1.3-19.4-46.9 1.7-103.7 31.6-135.8 71.4-25.8 30.3-50.2 79.4-50.2 129.4 0 7.1 1.3 14.2 1.6 16.5 3.3.3 8.4 1.3 13.4 1.3 42.2 0 94.9-28.9 122.6-65.8z"/>
-            </svg>
+            <AppleIcon />
             Conçu avec ❤ par Danon Marvin · BTS SIO 2025–2026
           </p>
         <p className="text-white/10">
