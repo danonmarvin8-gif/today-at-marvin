@@ -138,6 +138,18 @@ body {
   background-clip: text;
 }
 
+/* ─── Apple Logo Icon ─────────────────────────────────────────── */
+.apple-icon {
+  display: inline-block;
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+  fill: currentColor;
+  position: relative;
+  top: -0.08em; /* fine optical adjustment */
+  flex-shrink: 0;
+}
+
 /* ─── Scrollbar ───────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--color-void); }
